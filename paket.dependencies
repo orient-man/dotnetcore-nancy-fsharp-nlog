@@ -1,0 +1,9 @@
+framework: netstandard1.6, netcoreapp1.1
+source https://nuget.org/api/v2
+
+nuget FAKE
+nuget Microsoft.AspNetCore.Server.Kestrel
+nuget Microsoft.AspNetCore.Owin
+nuget Nancy = 2.0.0-barneyrubble
+nuget NLog = 5.0.0-beta06
+nuget NLog.Targets.ElasticSearch
