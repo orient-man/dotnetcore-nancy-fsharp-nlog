@@ -5,6 +5,7 @@ bin/
 build/
 deploy/
 test/
+*.bak
 *.user
 *.suo
 *.ncrunchsolution

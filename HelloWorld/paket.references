@@ -3,3 +3,4 @@ Microsoft.AspNetCore.Hosting
 Microsoft.AspNetCore.Owin
 Nancy
 NLog
+NLog.Targets.ElasticSearch
