@@ -9,3 +9,5 @@ nuget Microsoft.AspNetCore.Server.Kestrel
 nuget Nancy = 2.0.0-clinteastwood
 nuget NLog ~> 5 beta rc
 nuget NLog.Targets.ElasticSearch ~> 4 beta rc
+nuget xunit
+nuget xunit.runner.visualstudio
