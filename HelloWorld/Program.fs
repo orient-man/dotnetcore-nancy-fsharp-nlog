@@ -15,6 +15,7 @@ module Program =
         let host =
             WebHostBuilder()
                 .UseKestrel()
+                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build()
 

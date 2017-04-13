@@ -1,3 +1,4 @@
+Microsoft.AspNetCore.Server.IISIntegration
 Microsoft.AspNetCore.Server.Kestrel
 Microsoft.AspNetCore.Hosting
 Microsoft.AspNetCore.Owin

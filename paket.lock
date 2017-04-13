@@ -4,6 +4,7 @@ NUGET
     FAKE (4.57.4)
     Microsoft.AspNetCore.Hosting (1.1.1)
     Microsoft.AspNetCore.Owin (1.1.1)
+    Microsoft.AspNetCore.Server.IISIntegration (1.1.1)
     Microsoft.AspNetCore.Server.Kestrel (1.1.1)
     Nancy (2.0.0-clinteastwood)
     NLog (5.0.0-beta06)
