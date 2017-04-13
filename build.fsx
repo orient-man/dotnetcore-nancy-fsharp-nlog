@@ -24,9 +24,15 @@ Target "Publish" <| fun _ ->
             Configuration = configuration
             Output = output }
 
+Target "Zip" <| fun _ ->
+    let outputZip = sprintf "%s/Package.zip" output
+    [ "", { !! (sprintf "%s/**" output) with BaseDirectory = output; Excludes = [ outputZip ] } ]
+    |> ZipOfIncludes outputZip
+
 "Restore"
     ==> "Build"
     ==> "Test"
     ==> "Publish"
+    ==> "Zip"
 
 RunTargetOrDefault "Build"
