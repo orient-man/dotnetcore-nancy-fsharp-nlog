@@ -2,12 +2,12 @@
 #r "packages/FAKE/tools/FakeLib.dll"
 open Fake
 
-Target "Restore" (fun _ ->
-    !! "*/*.fsproj"
-    |> Seq.iter(fun proj -> DotNetCli.Restore (fun p -> { p with Project = proj })))
+Target "Restore" <| fun _ -> DotNetCli.Restore id
+Target "Build" <| fun _ -> DotNetCli.Build id
+Target "Publish" <| fun _ -> DotNetCli.Publish id
 
-Target "Build" (fun _ ->
-    !! "*/*.fsproj"
-    |> Seq.iter(fun proj -> DotNetCli.Build (fun p -> { p with Project = proj; Configuration = "Debug" })))
+"Restore"
+    ==> "Build"
+    ==> "Publish"
 
 RunTargetOrDefault "Build"
